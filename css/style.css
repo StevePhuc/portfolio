@@ -1,0 +1,54 @@
+/* div {
+    max-width: 300px;
+    height: 100px;
+    border: 2px solid green;
+}
+ */
+
+
+/* === Header ==== */
+
+/* header div {
+  border: none;
+  margin-right: 5%;
+  display: inline-block;
+  border: 2px solid purple;
+} */
+
+.header-wrap{
+    display: flex;
+     align-items: center;
+     flex:1;
+     justify-items: auto;
+     justify-content:center;
+}
+
+.header-wrap div{
+    border: 2px solid green;
+    margin-right: 20px;
+}
+
+
+header div img{ 
+    width: 100px;
+    border-radius: 50%;
+  }
+
+header ul li{
+    display: inline-block;
+    margin-right: 15%;
+    
+}
+
+header ul li a{
+    text-decoration:none;
+}
+/* ==== Body ==== */
+
+
+ 
+
+/* ==== Footer ==== */
+footer {
+    background-color: lightblue;
+}
