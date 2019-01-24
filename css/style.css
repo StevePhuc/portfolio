@@ -1,54 +1,86 @@
-/* div {
-    max-width: 300px;
-    height: 100px;
-    border: 2px solid green;
-}
- */
-
-
 /* === Header ==== */
 
-/* header div {
-  border: none;
-  margin-right: 5%;
-  display: inline-block;
-  border: 2px solid purple;
-} */
-
-.header-wrap{
-    display: flex;
-     align-items: center;
-     flex:1;
-     justify-items: auto;
-     justify-content:center;
+.container {
+  display: flex;
+  border: 10px solid goldenrod;
+  
+  min-height: 200px;
+  align-items: center;
+ 
 }
 
-.header-wrap div{
-    border: 2px solid green;
-    margin-right: 20px;
+.box {
+  border: 1px solid black; 
+}
+.box1 {
+  background: red;
+  flex: 1 1;
+  text-align: right;
 }
 
-
-header div img{ 
-    width: 100px;
-    border-radius: 50%;
-  }
-
-header ul li{
-    display: inline-block;
-    margin-right: 15%;
-    
+.box2 {
+  background: yellow;
+  flex: 0 0 200px;
+  text-align: center;
 }
 
-header ul li a{
-    text-decoration:none;
+.box3 {
+  background: purple;
+  flex: 2 10;
+  text-align: left;
 }
-/* ==== Body ==== */
 
+header img {
+  width:100px;
+  border-radius: 50%;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.menu li{
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+} 
+
+/* .header-wrap {
+  display: flex;
+  align-items: center; 
+  justify-items: center;
+  justify-content: center;  
+  text-align: center;
+}
+
+.header-wrap div {
+  border: 2px solid green; 
+  flex:1; 
+  height: 100px;
+}
 
  
 
+
+header div img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 15%;
+}
+
+*/
+/* ==== Body ==== */
+
 /* ==== Footer ==== */
 footer {
-    background-color: lightblue;
+  background-color: lightblue;
 }
