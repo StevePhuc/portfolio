@@ -13,19 +13,19 @@
   border: 1px solid black; 
 }
 .box1 {
-  background: red;
+ 
   flex: 1 1;
   text-align: right;
 }
 
 .box2 {
-  background: yellow;
+  
   flex: 0 0 200px;
   text-align: center;
 }
 
 .box3 {
-  background: purple;
+  
   flex: 2 10;
   text-align: left;
 }
