@@ -4,6 +4,23 @@ body {
   font-family: sans-serif;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  text-align: left;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.59);
+}
+
 /* === Header ==== */
 
 .container {
@@ -66,16 +83,14 @@ body {
 }
 
 .flex-nav ul {
-  border: 1px solid black;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  /* border: 1px solid black; */
+
   display: flex;
 }
 
 .flex-nav a {
   color: white;
-  background: rgba(0, 0, 0, 0.2);
+  /* background: rgba(0, 0, 0, 0.2); */
   font-weight: 100;
   text-decoration: none;
   text-transform: uppercase;
@@ -95,6 +110,105 @@ body {
 }
 
 /* ==== Body ==== */
+
+.home p {
+  text-align: left;
+}
+
+section {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin: 40px auto;
+  font-weight: 100;
+  max-width: 1200px;
+}
+
+.project-nav ul {
+  display: flex;
+}
+
+.project-nav ul a {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  flex-basis: 100%;
+  padding: 20px;
+}
+
+.project-nav ul a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* skill-flex */
+
+.skills, .project {
+  background: white;
+}
+
+.plan ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+.plan ul li:last-child {
+  border: 0;
+}
+progress {
+  margin: 20px 0;
+}
+
+.skill-flex h3 {
+  color: white;
+}
+.skill-flex {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.plan {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/*  Project*/
+
+iframe {
+  width: 100%;
+}
+
+/*  Contact*/
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+form label{
+  flex: 1 1 20%;
+  margin: 10px;
+}
+form input,form select{
+  flex: 1 1 70%;
+  margin: 10px;
+}
+
+label{
+  text-align: left;
+  /* padding-left: 20px; */
+}
+
+
+form button {
+  padding: 10px;
+  margin-top: 20px;
+  flex:0 1 70%;  
+}
 
 /* ==== Footer ==== */
 footer {
@@ -120,7 +234,9 @@ footer {
     padding-right: 0;
   }
 
-  .flex-nav ul {
+  .flex-nav ul,
+  .skill-flex,
+  .project-nav ul {
     flex-wrap: wrap;
   }
   .flex-nav li {
@@ -135,8 +251,11 @@ footer {
   .box4 {
     order: 1;
   }
-  .box{
+  .box {
     flex: 1 1 100%;
   }
 
+  header {
+    padding-top: 40px;
+  }
 }

@@ -27,19 +27,34 @@
             <li><a href="#home"> Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div>First Section</div>
-    <div>Second Section</div>
-    <div>Third Section</div>
-
-    <h4>Expect my skills</h4>
-    <details>
-      <summary>Skills</summary>
+    <section class="home" id="home">
+      <h2>Introduction</h2>
+      <p>
+        Hi everybody, this is my first assignment in Integrify. Make a
+        portfolio.
+      </p>
+      <p>
+        Implementation is only using HTML and CSS, try to use as many types of
+        HTMLs tages as possible.
+      </p>
+      <details>
+          <summary>Read more about Integrify Academy </summary>
+      <p>Integrify teaches coding to talented immigrants and connects graduates with tech jobs. Integrify provides a 12-month state-of-the-art software developer program teaching motivated and talented immigrants in modern software development and placing graduates in jobs. The course focuses on JavaScript, React/Redux and Node & Express equipping students with a skill-set to work as software developers. Teaching is lead by experienced software developers and the course is held 09-17 Monday to Friday leading in up to 1000 hours of pure coding.</p>
+    </details>
+      <table>
+        <thead>
+          <th>Skills</th>
+          <th>Time</th>
+        </thead>
+      </table>
+   
+    
       <ol>
         <li>HTML</li>
         <li>CSS</li>
@@ -49,7 +64,81 @@
         <li>Node</li>
         <li>MongoDB</li>
       </ol>
-    </details>
+    
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-flex">
+        <div class="plan plan1">
+          <h3>HTML, CSS</h3>
+          <p>I learn HTML,CSS for a long time.</p>
+          <ul class="feature">
+            <li>HTML advance</li>
+            <li>CSS advance</li>
+            <li>HTML5</li>
+            <li>CSS5</li>
+            <li>Web Analytic</li>
+          </ul>
+
+          <progress value="85" max="100"></progress>
+        </div>
+        <div class="plan plan2">
+          <h3>Javascript</h3>
+          <p>It is my language program, I use most</p>
+          <ul class="feature">
+            <li>Javascript baisc</li>
+            <li>jQuery</li>
+            <li>Nodejs</li>
+            <li>ES6</li>
+          </ul>
+          <progress value="70" max="100"></progress>
+        </div>
+        <div class="plan plan3">
+          <h3>React</h3>
+          <p>I've just learned it</p>
+          <ul class="feature">
+            <li>React baisc</li>
+            <li>Redux basic</li>
+          </ul>
+          <progress value="30" max="100"></progress>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="projects">
+      <h2> Project</h2>
+      <iframe
+        width="1381"
+        height="517"
+        src="https://www.youtube.com/embed/yIu5k_NjStA"
+        frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <form >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      
+        <button>Send to me</button>
+      </form>
+    </section>
+
+    
 
     <footer>
       <ul>
