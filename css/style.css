@@ -1,86 +1,266 @@
+/* === Default ==== */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  text-align: left;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.59);
+  text-align: center;
+  padding: 20px;
+}
+
 /* === Header ==== */
 
 .container {
   display: flex;
-  border: 10px solid goldenrod;
-  
+  border: 10px solid white;
   min-height: 200px;
+  /* justify-content: space-evenly; */
   align-items: center;
- 
+  flex-wrap: wrap;
 }
 
 .box {
-  border: 1px solid black; 
+  /* border: 1px solid black;  */
+  text-align: center;
+  padding: 10px 0;
 }
 .box1 {
-  background: red;
-  flex: 1 1;
   text-align: right;
+  /* background: wheat; */
+  flex: 1 10;
 }
 
 .box2 {
-  background: yellow;
-  flex: 0 0 200px;
-  text-align: center;
+  /* background: rgb(172, 172, 199); */
+  /* text-align: right; */
+  flex: 0 1 250px;
 }
 
 .box3 {
-  background: purple;
-  flex: 2 10;
+  /* background: yellow; */
+  flex: 0 0 150px;
   text-align: left;
 }
 
-header img {
-  width:100px;
-  border-radius: 50%;
+.box4 {
+  /* background: red; */
+  text-align: right;
+  padding-right: 50px;
+  flex: 1;
 }
 
-.menu{
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
-.menu li{
-  list-style: none;
-}
-
-.menu a {
-  text-decoration: none;
-  text-transform: uppercase;
-} 
-
-/* .header-wrap {
-  display: flex;
-  align-items: center; 
-  justify-items: center;
-  justify-content: center;  
-  text-align: center;
-}
-
-.header-wrap div {
-  border: 2px solid green; 
-  flex:1; 
-  height: 100px;
-}
-
- 
-
-
-header div img {
+.box1 img {
   width: 100px;
   border-radius: 50%;
 }
 
-header ul li {
-  display: inline-block;
-  margin-right: 15%;
+.box4 img {
+  width: 200px;
+  text-align: right;
 }
 
-*/
+.wrapper {
+  background-image: linear-gradient(260deg, #2376ea 0%, #c16ecf 100%);
+  padding: 5px 0;
+}
+
+.flex-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.flex-nav ul {
+  /* border: 1px solid black; */
+
+  display: flex;
+}
+
+.flex-nav a {
+  color: white;
+  /* background: rgba(0, 0, 0, 0.2); */
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.flex-nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.flex-nav li {
+  flex: 3;
+}
+
 /* ==== Body ==== */
 
+section {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin: 40px auto;
+  font-weight: 100;
+  max-width: 1200px;
+}
+
+/* ==== Introduction ==== */
+.home p {
+  text-align: left;
+}
+table{
+  width: 90%;
+  margin: 20px auto;
+}
+
+ th,td{
+   width: 40%;
+   display: inline-block;
+   border: 1px solid black; 
+ }
+
+ td{
+  border-top:none; 
+ }
+/* skill-flex */
+
+.skills, .project {
+  background: white;
+}
+
+.plan ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+.plan ul li:last-child {
+  border: 0;
+}
+progress {
+  margin: 20px 0;
+}
+
+.skill-flex h3 {
+  color: white;
+}
+.skill-flex {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.plan {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/*  Project*/
+
+iframe {
+  width: 100%;
+}
+
+/*  Contact*/
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+form label{
+  flex: 1 1 20%;
+  margin: 10px;
+}
+form input,form select{
+  flex: 1 1 70%;
+  margin: 10px;
+}
+
+label{
+  text-align: left;
+  /* padding-left: 20px; */
+}
+
+
+form button {
+  padding: 10px;
+  margin-top: 20px;
+  flex:0 1 70%;  
+}
+
 /* ==== Footer ==== */
-footer {
-  background-color: lightblue;
+footer .wrapper {
+ padding: 20px 0;
+ padding-bottom: 100px;
+}
+
+
+
+@media all and (max-width: 800px) {
+  .box {
+    flex: 1 1 50%;
+  }
+
+  .box1 {
+    order: -2;
+    text-align: center;
+  }
+
+  .box3 {
+    text-align: center;
+  }
+  .box4 {
+    order: -1;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .flex-nav ul,
+  .skill-flex,
+  .project-nav ul {
+    flex-wrap: wrap;
+  }
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .box3 {
+    order: 2;
+  }
+  .box4 {
+    order: 1;
+  }
+  .box {
+    flex: 1 1 100%;
+  }
+
+  header {
+    padding-top: 40px;
+  }
 }
