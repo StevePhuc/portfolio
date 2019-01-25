@@ -19,6 +19,8 @@ h2 {
   letter-spacing: 2px;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.59);
+  text-align: center;
+  padding: 20px;
 }
 
 /* === Header ==== */
@@ -74,6 +76,7 @@ h2 {
 
 .wrapper {
   background-image: linear-gradient(260deg, #2376ea 0%, #c16ecf 100%);
+  padding: 5px 0;
 }
 
 .flex-nav {
@@ -111,10 +114,6 @@ h2 {
 
 /* ==== Body ==== */
 
-.home p {
-  text-align: left;
-}
-
 section {
   text-align: center;
   background: rgba(0, 0, 0, 0.05);
@@ -124,21 +123,24 @@ section {
   max-width: 1200px;
 }
 
-.project-nav ul {
-  display: flex;
+/* ==== Introduction ==== */
+.home p {
+  text-align: left;
+}
+table{
+  width: 90%;
+  margin: 20px auto;
 }
 
-.project-nav ul a {
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.2);
-  flex-basis: 100%;
-  padding: 20px;
-}
+ th,td{
+   width: 40%;
+   display: inline-block;
+   border: 1px solid black; 
+ }
 
-.project-nav ul a:hover {
-  background: rgba(0, 0, 0, 0.4);
-}
-
+ td{
+  border-top:none; 
+ }
 /* skill-flex */
 
 .skills, .project {
@@ -211,9 +213,12 @@ form button {
 }
 
 /* ==== Footer ==== */
-footer {
-  background-color: lightblue;
+footer .wrapper {
+ padding: 20px 0;
+ padding-bottom: 100px;
 }
+
+
 
 @media all and (max-width: 800px) {
   .box {
