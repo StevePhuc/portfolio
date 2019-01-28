@@ -1,4 +1,8 @@
 /* === Default ==== */
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -10,7 +14,7 @@ ul {
   padding: 0;
 }
 
-ol{
+ol {
   text-align: left;
 }
 
@@ -25,11 +29,17 @@ h2 {
 
 /* === Header ==== */
 
+header{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .container {
   display: flex;
-  border: 10px solid white;
+  /* border: 10px solid white; */
   min-height: 200px;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -37,30 +47,30 @@ h2 {
 .box {
   /* border: 1px solid black;  */
   text-align: center;
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 .box1 {
-  text-align: right;
+  /* text-align: right; */
   /* background: wheat; */
-  flex: 1 10;
+  flex: 1;
 }
 
 .box2 {
   /* background: rgb(172, 172, 199); */
-  /* text-align: right; */
-  flex: 0 1 250px;
+  /* text-align: center; */
+  flex: 1;
 }
 
 .box3 {
   /* background: yellow; */
-  flex: 0 0 150px;
-  text-align: left;
+  flex: 1;
+  /* text-align: left; */
 }
 
 .box4 {
   /* background: red; */
-  text-align: right;
-  padding-right: 50px;
+  /* text-align: right; */
+  /* padding-right: 50px; */
   flex: 1;
 }
 
@@ -76,19 +86,21 @@ h2 {
 
 .wrapper {
   background-image: linear-gradient(260deg, #2376ea 0%, #c16ecf 100%);
-  padding: 5px 0;
+  /* padding: 5px 0; */
 }
 
 .flex-nav {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .flex-nav ul {
   /* border: 1px solid black; */
 
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-nav a {
@@ -98,7 +110,7 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  padding: 10px 5px;
+  padding: 15px 0;
   width: 100%;
   text-align: center;
   transition: all 0.5s;
@@ -115,36 +127,47 @@ h2 {
 /* ==== Body ==== */
 
 section {
-  text-align: center;
   background: rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  margin: 40px auto;
-  font-weight: 100;
+}
+
+section div {
   max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center; 
+  font-weight: 100;
 }
 
 /* ==== Introduction ==== */
 .home p {
   text-align: left;
 }
-table{
+table {
   width: 90%;
   margin: 20px auto;
 }
 
- th,td{
-   width: 40%;
-   display: inline-block;
-   border: 1px solid black; 
- }
+th,
+td {
+  width: 25%;
+  display: inline-block;
+  border: 1px solid black;
+}
 
- td{
-  border-top:none; 
- }
+td {
+  border-top: none;
+}
 /* skill-flex */
 
-.skills, .project {
+.skills,
+.project {
   background: white;
+}
+
+.skills {
+  background-image: url("../asset/images/background.jpg");
+  background-size: cover;
+
 }
 
 .plan ul li {
@@ -171,7 +194,7 @@ progress {
 
 .plan {
   flex: 1;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(265, 265, 265, 0.6);
   margin: 20px;
   padding: 20px;
   border-radius: 6px;
@@ -185,40 +208,60 @@ iframe {
 
 /*  Contact*/
 
-form{
+form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
 }
 
-form label{
+fieldset{
+  margin: 20px auto;
+  /* width: 90%; */
+}
+form label {
   flex: 1 1 20%;
   margin: 10px;
 }
-form input,form select{
+
+.yourskills {
+  flex-basis: 90%;
+}
+form input,
+form select {
   flex: 1 1 70%;
   margin: 10px;
 }
 
-label{
+label {
   text-align: left;
   /* padding-left: 20px; */
 }
 
-
 form button {
   padding: 10px;
   margin-top: 20px;
-  flex:0 1 70%;  
+  flex: 0 1 70%;
 }
 
 /* ==== Footer ==== */
 footer .wrapper {
- padding: 20px 0;
- padding-bottom: 100px;
+  padding: 20px 0;
+  padding-bottom: 100px;
+}
+
+footer .flex-nav img { 
+  color: white;
+  height: 40px;
+}
+
+footer .flex-nav a{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 
+/*   mobile  */
 
 @media all and (max-width: 800px) {
   .box {
