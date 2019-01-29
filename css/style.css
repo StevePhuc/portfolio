@@ -1,5 +1,5 @@
 /* === Default ==== */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -29,10 +29,102 @@ h2 {
 
 /* === Header ==== */
 
-header{
+a:hover {
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+header {
+  background-image: url("../asset/images/muquangchai.jpg");
+  background-color: greenyellow;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.header1 > * {
+  /* border: white solid 4px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.header1 .ready {
+  flex: 2;
+  font-size: 300%;
+  align-items: flex-end;
+}
+
+.header1 .time {
+  flex: 1;
+  font-size: 500%;
+}
+
+.header1 .talented {
+  flex: 1;
+  font-size: 200%;
+}
+
+.header1 .late {
+  flex: 2;
+  align-items: flex-start;
+  font-size: 200%;
+}
+
+.header1 button {
+  font-size: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+  background: #84B154;
+  width: 180px;
+  border-radius: 5px;
+  transition: all 1s;
+}
+
+
+.header1 button:hover {
+  transform: scale(1.1); 
+
+}
+
+
+
+.header1 button a{
+  display: inline-block;
+  padding: 10px;
+}
+
+.photosrc {
+  position: absolute;
+  bottom: 21px;
+  left: 10px;
+}
+.photosrc a:link,
+.photosrc a:visited {
+  color: rgba(265, 265, 265, 0.7);
+}
+
+.header2 {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .container {
@@ -56,13 +148,11 @@ header{
 }
 
 .box2 {
-  /* background: rgb(172, 172, 199); */
   /* text-align: center; */
   flex: 1;
 }
 
 .box3 {
-  /* background: yellow; */
   flex: 1;
   /* text-align: left; */
 }
@@ -85,8 +175,11 @@ header{
 }
 
 .wrapper {
-  background-image: linear-gradient(260deg, #2376ea 0%, #c16ecf 100%);
+  background: #96BA5A;
   /* padding: 5px 0; */
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 1px 20px 0 rgba(0, 0, 0, 0.7)
 }
 
 .flex-nav {
@@ -127,18 +220,23 @@ header{
 /* ==== Body ==== */
 
 section {
-  background: rgba(0, 0, 0, 0.05);
 }
 
 section div {
   max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
-  text-align: center; 
+  text-align: center;
   font-weight: 100;
 }
 
 /* ==== Introduction ==== */
+
+ 
+
+.home {
+  background: white;
+}
 .home p {
   text-align: left;
 }
@@ -158,17 +256,11 @@ td {
   border-top: none;
 }
 /* skill-flex */
-
-.skills,
-.project {
+ 
+.skills{
   background: white;
 }
-
-.skills {
-  background-image: url("../asset/images/background.jpg");
-  background-size: cover;
-
-}
+ 
 
 .plan ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -189,15 +281,30 @@ progress {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .plan {
   flex: 1;
-  background: rgba(265, 265, 265, 0.6);
+  background: #96BA5A;
   margin: 20px;
   padding: 20px;
   border-radius: 6px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 100px 50px 40px 0 rgba(0, 0, 0, 0.4)
+}
+ 
+
+.feature{
+  flex:1;
+}
+
+progress {
+  /* align-self: flex-end; */
 }
 
 /*  Project*/
@@ -214,7 +321,7 @@ form {
   justify-content: center;
 }
 
-fieldset{
+fieldset {
   margin: 20px auto;
   /* width: 90%; */
 }
@@ -241,25 +348,40 @@ form button {
   padding: 10px;
   margin-top: 20px;
   flex: 0 1 70%;
+} 
+
+
+input,label{
+  padding: 10px;
 }
 
 /* ==== Footer ==== */
 footer .wrapper {
   padding: 20px 0;
-  padding-bottom: 100px;
+  padding-bottom: 100px; 
 }
 
-footer .flex-nav img { 
+footer .flex-nav i {
   color: white;
   height: 40px;
 }
 
-footer .flex-nav a{ 
+footer .flex-nav a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
+/*  social media icons */
+
+i {
+  font-size: 40px;
+  color: yellow;
+}
+
+.fa-github {
+  color: #2376ea;
+}
 
 /*   mobile  */
 
@@ -290,6 +412,24 @@ footer .flex-nav a{
   .flex-nav li {
     flex: 1 1 50%;
   }
+
+  .header1 .ready {
+    flex: 1;
+    font-size: 200%;
+  }
+
+  .header1 .time {
+    flex: 1;
+    font-size: 300%;
+  }
+
+  .header1 .talented {
+    font-size: 120%;
+  }
+
+  .photosrc {
+    display: none;
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -304,6 +444,11 @@ footer .flex-nav a{
   }
 
   header {
-    padding-top: 40px;
+    padding-top: 10px;
   }
+  .header1 button{
+    width: 150px;
+    font-size: 15px;
+  }
+ 
 }

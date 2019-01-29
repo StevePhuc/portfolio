@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Phuc Nguyen, Junior Full Stack Developer"
+    />
+    <meta name="keywords" content="Web Development, HTML, CSS, React, Node" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -8,19 +20,37 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="box box1">
-          <img src="./asset/images/phucavata.jpg" alt="Phuc Nguyen" />
-        </div>
-        <div class="box box2">
-          <h3>Phuc Nguyen</h3>
-          <em>Junior Full Stack Developer</em>
-        </div>
-        <div class="box box3"><address>Helsinki, Finland</address></div>
-        <div class="box box4">
-          <img src="./asset/images/integrify.png" alt="" />
+       
+      <div class="header2">
+        <div class="container">
+          <div class="box box1">
+            <img src="./asset/images/phucavata.jpg" alt="Phuc Nguyen" />
+          </div>
+          <div class="box box2">
+            <h3>Phuc Nguyen</h3>
+            <em>Junior Full Stack Developer</em>
+          </div>
+          <div class="box box3"><address>Helsinki, Finland</address></div>
+          <div class="box box4">
+            <img src="./asset/images/logoIntegrify.svg" alt="" />
+          </div>
         </div>
       </div>
+
+      <div class="header1">
+        <div class="ready"><span>I am ready at</span></div>
+        <div class="time"><time>August 2019</time></div>
+        <div class="talented">
+          <span>Don't miss your Talented Developer</span>
+        </div>
+        <div class="late">
+          <div>
+            <button><a href="#contact">Contact</a></button>
+            <button><a href="#home">Read more</a></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="photosrc"> <span class="background-info-title">Mu Cang Chai, Vietnam from <a href="http://www.flickr.com/photos/23866512@N05" target="_black" >Photo by tu_geo</a></span></div>
     </header>
 
     <div class="wrapper">
@@ -37,13 +67,12 @@
     <section class="home" id="home">
       <div>
         <h2>Introduction</h2>
-        <p>
-          Hi everybody, this is my first assignment in Integrify. Make a
-          portfolio.
+        <p class="para first-para">
+          Hi everybody, my name is <mark>Phuc Nguyen</mark>. This is my first assignment in <strong>Integrify</strong>.
         </p>
-        <p>
-          Implementation is only using HTML and CSS, try to use as many types of
-          HTMLs tages as possible.
+        <p class="para" id="second-para">
+          Make a portfolio implementation is only using <sup>HTML</sup> and <u>CSS</u>, try to use
+          as many types of HTMLs tages as possible.
         </p>
         <details>
           <summary>Read more about Integrify Academy </summary>
@@ -147,10 +176,10 @@
             <ul class="feature">
               <li>React baisc</li>
               <li>Redux basic</li>
-              <li>  &nbsp;</li> 
+              <li>&nbsp;</li>
               <li>&nbsp;</li>
             </ul>
-            <progress value="30" max="100"></progress>
+            <progress></progress>
           </div>
         </div>
       </div>
@@ -202,6 +231,10 @@
             placeholder="Your email.."
             required
           />
+          <label>Age</label> <input type="number" id="age" min="16" max="100" />
+
+          <label>Region</label>
+          <input type="text" pattern="[Ff]innish|[Ss]wedish|[Dd]anish" />
 
           <label for="choose">Would you prefer JavaScript or Python?</label>
           <input id="choose" name="i_like" pattern="JavaScript|Python" />
@@ -209,16 +242,24 @@
           <fieldset class="yourskills">
             <legend>What skills of these you have?</legend>
             <input type="checkbox" id="html" /><label for="html">HTML</label>
-            <input type="checkbox" id="css" /><label  for="css">CSS</label>
-            <input type="checkbox" id="javaScript" /><label  for="javaScript">JavaScript</label>
+            <input type="checkbox" id="css" /><label for="css">CSS</label>
+            <input type="checkbox" id="javaScript" /><label for="javaScript"
+              >JavaScript</label
+            >
             <input type="checkbox" id="node" /><label for="node">Node</label>
             <input type="checkbox" id="react" /><label for="react">React</label>
           </fieldset>
- 
+
           <fieldset>
             <label>Do you know me</label>
-            <input type="radio" id="knowMeYes" name="knowMe"/><label for="knowMeYes">Yes</label>
-            <input type="radio" id="knowMeNo" name="knowMe"/><label for="knowMeNo">No</label>
+            <input type="radio" id="knowMeYes" name="knowMe" /><label
+              for="knowMeYes"
+              >Yes</label
+            >
+            <input type="radio" id="knowMeNo" name="knowMe" /><label
+              for="knowMeNo"
+              >No</label
+            >
           </fieldset>
 
           <fieldset>
@@ -252,32 +293,16 @@
         <nav class="flex-nav">
           <ul>
             <li>
-              <a href="#"
-                ><img src="./asset/images/github.svg" alt="" /><span
-                  >Github
-                </span></a
-              >
+              <a href="#"> <i class="fab fa-github"></i><span>Github</span></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./asset/images/linkedin.svg" alt="" /><span
-                  >LinkedIn
-                </span></a
-              >
+              <a href="#"> <i class="fab fa-linkedin"></i><span>linkedin</span></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./asset/images/medium.svg" alt="" /><span
-                  >Medium
-                </span></a
-              >
+              <a href="#"> <i class="fab fa-medium"></i><span>medium</span></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./asset/images/twitter.svg" alt="" /><span
-                  >Twitter
-                </span></a
-              >
+              <a href="#"> <i class="fab fa-twitter"></i> <span>twitter</span></a>
             </li>
           </ul>
         </nav>
