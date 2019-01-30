@@ -54,7 +54,18 @@
     </header>
 
     <div class="wrapper">
-      <nav class="flex-nav">
+        <nav class="flex-nav nav-menutop">
+            <ul>    
+              <li>
+                <a  id="menu">
+                  <i class="fas fa-bars"></i>
+                  <span>Menu</span>
+                </a>
+              </li>
+               
+            </ul>
+          </nav>
+      <nav class="flex-nav nav-menutoplink">
         <ul>
           <li><a href="#home"> Home</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -65,7 +76,7 @@
     </div>
 
     <section class="home" id="home">
-      <div>
+      <div  class="wrapper">
         <h2>Introduction</h2>
         <p class="para first-para">
           Hi everybody, my name is <mark>Phuc Nguyen</mark>. This is my first assignment in <strong>Integrify</strong>.
@@ -143,7 +154,7 @@
     </section>
 
     <section class="skills" id="skills">
-      <div>
+      <div class="wrapper">
         <h2>Skills</h2>
         <div class="skill-flex">
           <div class="plan plan1">
@@ -185,21 +196,41 @@
       </div>
     </section>
 
-    <section class="project" id="projects">
-      <div>
-        <h2>Project</h2>
-        <iframe
-          width="1381"
-          height="517"
-          src="https://www.youtube.com/embed/yIu5k_NjStA"
-          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+    <section id="projects">
+      <div class="wrapper">
+        <h2>My projcets</h2>
+        <div class="projects">
+          <div class="project">
+            <i class="fab fa-html5"></i>
+            <div class="project_detail">
+              <h2>Portfolio</h2>
+              <p class="project_detail">See at Github: <a href=https://github.com/phucfi/portfolio"">Click here </a></p>
+            </div>
+    
+          </div>
+          <div class="project">
+            <i class="fab fa-js"></i>
+            <div class="project_detail">
+              <h2>Project 2</h2>
+              <p class="project_detail">Our story Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, culpa!</p>
+            </div>
+    
+          </div>
+          <div class="project">
+            <i class="fab fa-react"></i>
+            <div class="project_detail">
+              <h2>Project 3</h2>
+              <p class="project_detail">Our story Lorem . Ipsa praesentium error, tempore harum natus necessitatibus
+                dolorem optio iste vel. Nisi?</p>
+            </div>
+    
+          </div>
+        </div> 
+      </div> 
     </section>
 
     <section class="contact" id="contact">
-      <div>
+        <div class="wrapper">
         <h2>Contact</h2>
         <form>
           <label for="fname">First Name (required)</label>
@@ -289,7 +320,7 @@
 
     <footer>
       <div class="wrapper">
-        <h2>Integrify Academy</h2>
+        <h2>Integrify Academy</h2> 
         <nav class="flex-nav">
           <ul>
             <li>

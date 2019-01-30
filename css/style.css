@@ -18,7 +18,7 @@ ol {
   text-align: left;
 }
 
-h2 {
+ .wrapper > h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@ a:hover {
 }
 
 a:link {
-  color: black;
+  color:rgba(150, 186, 90,0.9);
   text-decoration: none;
 }
 
@@ -108,6 +108,7 @@ header {
 .header1 button a{
   display: inline-block;
   padding: 10px;
+  color: black;
 }
 
 .photosrc {
@@ -174,7 +175,7 @@ header {
   text-align: right;
 }
 
-.wrapper {
+body > .wrapper,footer > .wrapper {
   background: #96BA5A;
   /* padding: 5px 0; */
   position: sticky;
@@ -182,7 +183,7 @@ header {
   box-shadow: 10px 1px 20px 0 rgba(0, 0, 0, 0.7)
 }
 
-.flex-nav {
+.flex-nav { 
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -217,17 +218,41 @@ header {
   flex: 3;
 }
 
+.flex-nav i.fas{
+  font-size: 20px;
+}
+
+#menu{
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+}
+#menu .fas{
+  flex-basis: 50px;
+}
+
+.nav-menutop{
+  display: none;
+}
+.nav-menutop a{
+  padding:  5px 0;
+}
+
+
+ 
+
 /* ==== Body ==== */
 
 section {
 }
 
-section div {
+section > .wrapper {
   max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
   text-align: center;
   font-weight: 100;
+  /* background: white; */
 }
 
 /* ==== Introduction ==== */
@@ -257,9 +282,7 @@ td {
 }
 /* skill-flex */
  
-.skills{
-  background: white;
-}
+ 
  
 
 .plan ul li {
@@ -286,7 +309,7 @@ progress {
 
 .plan {
   flex: 1;
-  background: #96BA5A;
+  background: rgba(150, 186, 90,0.9);
   margin: 20px;
   padding: 20px;
   border-radius: 6px;
@@ -295,6 +318,7 @@ progress {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  border: 2px solid rgb(92, 121, 46);
   box-shadow: 100px 50px 40px 0 rgba(0, 0, 0, 0.4)
 }
  
@@ -305,12 +329,35 @@ progress {
 
 progress {
   /* align-self: flex-end; */
+  /* justify-self: flex-end; khong lam viec  */
 }
 
 /*  Project*/
 
 iframe {
-  width: 100%;
+  /* width: 100%; */
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 20px;
+}
+
+.project{
+  background: rgba(265, 265, 265,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+
+}
+
+.project .fab {
+  color: rgba(150, 186, 90,0.9);
+  font-size: 400%;
 }
 
 /*  Contact*/
@@ -376,7 +423,7 @@ footer .flex-nav a {
 
 i {
   font-size: 40px;
-  color: yellow;
+  color: white;
 }
 
 .fa-github {
@@ -430,6 +477,26 @@ i {
   .photosrc {
     display: none;
   }
+
+  .nav-menutop{
+    display: block;
+  }
+
+ 
+  .wrapper .nav-menutoplink{
+    display:none;
+  }
+
+  .wrapper:hover .nav-menutoplink{
+    display: block;
+  }
+
+  .wrapper:hover .nav-menutop{
+    /* display: none; */
+  }
+  .wrapper:hover a{
+    padding: 5px 0;
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -450,5 +517,9 @@ i {
     width: 150px;
     font-size: 15px;
   }
+
+ 
+
+  
  
 }
