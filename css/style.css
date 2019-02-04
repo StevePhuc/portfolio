@@ -57,3 +57,31 @@ img {
 }
 
 /* * * * * * * * * * * * * * * * * * * *  Top  CSS                      * * * * * * * * * * * * * * * * * * * * **/
+
+.top {
+  display: grid;
+  grid-template-areas: 
+        "name name info1"
+        "name name info2";
+  grid-gap: 20px;
+}
+
+
+.myname {
+  grid-area: name; 
+  min-height: 400px;
+  background: white url(../asset/images/muquangchai.jpg);
+  background-position: bottom right;
+  background-attachment: fixed;
+}
+
+.info { 
+  background: var(--brown);
+}
+
+.info1{
+  grid-area: info1;
+}
+.info2{
+  grid-area: info2;
+}
