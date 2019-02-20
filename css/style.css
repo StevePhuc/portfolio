@@ -29,6 +29,10 @@ ol {
 
 /* === Header ==== */
 
+html {
+scroll-behaviour: smooth;
+}
+
 a:hover {
 }
 
