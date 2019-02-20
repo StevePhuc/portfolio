@@ -30,7 +30,7 @@ ol {
 /* === Header ==== */
 
 html {
-scroll-behaviour: smooth;
+scroll-behavior: smooth;
 }
 
 a:hover {
