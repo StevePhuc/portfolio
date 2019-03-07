@@ -2,7 +2,7 @@
 This is learn Git, Github, HTML and CSS by building a portfolio.
 
 # Demo
-[Portfolio](https://phucfi.github.io/portfolio/)
+[Portfolio](https://stevephuc.github.io/portfolio/)
 
 # Technologies
 * HTML
